@@ -1,11 +1,11 @@
-from src.connections.database import DatabaseSourceConnection
+from src.connections.database import get_database_connection
 from src.engines.flask import FlaskStandaloneEngine
 from src.pages import AdminPage
 from src.site import AdminSite
 
 admin_site = AdminSite(
     name="Test application",
-    connection=DatabaseSourceConnection(
+    connection=get_database_connection(
         "postgresql://ledger:ledger@127.0.0.1:5432/ledger"
     ),
 )

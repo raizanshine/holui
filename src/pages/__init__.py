@@ -7,7 +7,7 @@ from src.data_source import DataSource
 
 class AdminPage:
     """
-    Represents requirements for admin page in a common way.
+    Represents requirements for admin page in a general way.
     This specification is same for every Engine class.
     """
 
